@@ -1,0 +1,11 @@
+When we are doing convolutional operation,then the feature map we are getting,its size is smaller than image.
+Now if i apply one more filter on this feature map,then size will decrease further.
+--Problem with convolution-loose information about the image.
+Border pixels become part of less number of convolutions as compared to the middle one.
+The side pixels will have less say than the middle one.
+
+Padding solves this problem.
+
+In padding we add one row as border to the image so that the final image obtained has dimension as we want.In keras it is called 0 padding
+
+In keras when we apply same then keras automatically identifies how much padding to be given to the image so that o/p image after convolution has desired dimension.
