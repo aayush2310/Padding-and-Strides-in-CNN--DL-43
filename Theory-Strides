@@ -1,0 +1,14 @@
+shift in right direction during convolution=of 1 pixel
+stride=1
+
+stride=(1,1)
+horizontal=1,vertical=1
+stride can be changed
+
+if i increase the stride,the size of feature map will get reduced.
+if stride>1,it is called strided convolution.
+
+strided convolutional:-skipping through the information.
+Why strided convolutional?
+1)When I want high level features from an image and do not want low level features(barikiyan),then stride should be increased.
+2)Computing power -training becomes fast
